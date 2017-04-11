@@ -1,0 +1,124 @@
+/* -----------------------------------------------------------------------------
+// 5. Menu Page 
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Hero Title
+// - Section 1 - Menu Item
+// - Section 2 - Banner
+
+
+//
+// Menu Page
+// --------------------------------------------------
+.menu {
+
+// Hero Title
+// --------------------------------------------------
+    .hero-title {
+        background-image: url(http://placehold.it/1895x1270);
+    }
+
+
+// Menu Item
+// --------------------------------------------------
+    .item {
+        position: relative;
+        padding: 15px 0; 
+        border-bottom: 1px solid #f1f1f1;
+        @include clearfix();
+
+        .align {
+            float: left;
+        }
+
+        h4 {
+            font-size: 16px;
+            color: #4b4b4b;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        .price {
+            float: right;
+            font-size: 24px;
+            color: $brand-color;
+            font-family: $headings-font-family;
+
+            small {
+                font-size: 60%;
+            }
+        }
+
+        // recommended item 
+        &.recommended {
+            padding: 15px 20px;
+            border: 2px solid $brand-color;
+
+            .note {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: $brand-color;
+                color: #fff;
+                font-family: $links-font-family;
+                text-transform: uppercase;
+                padding: 8px 15px;
+                font-size: 10px;
+                letter-spacing: 2px;   
+                text-align: center;
+            }
+        }
+    }
+
+
+// Banner
+// --------------------------------------------------
+    .banner {
+        text-align: center;
+        background-position: center center;
+
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+            -ms-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+
+        h2 {
+            display: inline-block;
+            padding-top: 50px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            background: url(../img/vector4.png) no-repeat center center;
+            background-position-y: 0;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        // breakfast banner 
+        &.breakfast {
+            background-image: url(http://placehold.it/1895x1270);
+        }
+
+        // lunch banner 
+        &.lunch {
+            background-image: url(http://placehold.it/1895x1270);
+        }
+
+        // dinner banner 
+        &.dinner {
+            background-image: url(http://placehold.it/1895x1270);
+        }
+    }
+}

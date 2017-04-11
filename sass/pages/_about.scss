@@ -1,0 +1,152 @@
+/* -----------------------------------------------------------------------------
+// 2. About Page 
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Section 1 - Hero Slider
+// - Section 3 - Couples
+// - Section 4 - Counters
+// - Section 5 - Gallery
+// - Section 6 - Form
+// - Section 7 - Events
+
+
+//
+// About Page
+// --------------------------------------------------
+.about {
+
+// Section Headline
+// --------------------------------------------------
+    .section-headline {
+        margin-bottom: 20px;
+        text-align: center;
+
+        h4 {
+            display: inline-block;
+            padding-top: 40px;
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background: url(../img/vector3.png) no-repeat center center;
+            background-position-y: 0;
+        }
+
+        & + p {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+// Hero Title
+// --------------------------------------------------
+    .hero-title {
+        background-image: url(http://placehold.it/1895x1270);
+    }
+
+
+// History 
+// --------------------------------------------------
+    .banner {
+        h3 {
+            display: inline-block;
+            margin: 0 0 30px 0;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            & + p {
+                margin-bottom: 30px;
+            }
+        }
+
+        h5 {
+            margin-top: 30px;
+            color: $brand-color;
+            font-style: italic;
+            margin-bottom: 5px;
+
+            & + span {
+                font-family: $links-font-family;
+                color: #4b4b4b;
+                text-transform: uppercase;
+            }
+        }
+
+        h4 {
+            color: $brand-color;
+            margin-bottom: 20px;
+        }
+    }
+
+// Numbers
+// --------------------------------------------------
+    .numbers {
+
+        .section-headline + p {
+            margin-bottom: 50px;
+        }
+        
+        .progress-item {
+            text-align: center;
+
+            &:before {
+                content: ' ';
+                display: block;
+                position: absolute;
+                top: -10px;
+                left: 0;
+                right: 0;
+                width: 190px;
+                height: 190px;
+                margin: 0 auto;
+                border: 25px solid #f9f9f9;
+                border-radius: 100%;
+                background-color: transparent;
+                z-index: -1;
+            }
+
+            strong {
+                font-family: $headings-font-family;
+                position: absolute;
+                top: 55px;
+                right: 0;
+                left: 0;
+                color: #313131;
+                font-weight: 600;
+                font-size: 36px;
+            }
+
+            h4 {
+                margin-top: 30px;
+                font-family: $links-font-family;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #4b4b4b;
+            }
+        }
+
+        @media (max-width:992px) {
+            .progress-item {
+                margin-bottom: 30px; 
+            }
+        }
+    }
+
+// Testimonials 
+// --------------------------------------------------
+    .testimonials {
+        padding: 100px 0;
+        background: url(http://placehold.it/1895x1150) center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}

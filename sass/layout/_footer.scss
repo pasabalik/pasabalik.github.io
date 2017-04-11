@@ -1,0 +1,77 @@
+/* -----------------------------------------------------------------------------
+// 2. Footer 
+// ----------------------------------------------------------------------------- */
+
+// Table of content
+// -----------------------------------------------------------------------------
+// - General Footer Styles
+
+
+// General Footer Styles
+// --------------------------------------------------
+footer {
+	background-color: $dark-text-color;
+    border-top: 5px solid $brand-color;
+
+    .footer-main {
+        padding: 100px 0;
+        text-align: center;
+
+        h3 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            & + p {
+                margin-bottom: 30px;
+                color: #717171;
+            }
+        }
+
+        .btn {
+            padding: 13px 25px;
+            font-size: 12px;
+            margin-left: 10px;
+            @include transition(all, .5s);
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                background-color: transparent;
+                border-color: $brand-color;
+                color: $brand-color;
+            }
+        }
+    }
+    
+    .footer-copyright {
+        padding: 15px 0;
+        background-color: $brand-color;
+        color: #fff;
+        font-family: $links-font-family;
+        text-align: center;
+        text-transform: uppercase;
+
+        p {
+            opacity: .5;
+            margin: 0;
+            font-size: 12px;
+
+            @include transition(opacity, .5s);
+        }
+
+        em {
+            margin: 0 10px;
+        }
+
+        &:hover {
+            p {
+                opacity: 1;
+            }
+        }
+    }
+}

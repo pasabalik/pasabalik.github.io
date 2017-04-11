@@ -1,0 +1,150 @@
+/* -----------------------------------------------------------------------------
+// 6. Reservation Read Page 
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Hero Title
+// - Section 1 - Form
+// - Section 2 - Banner
+
+
+//
+// Reservation Page
+// --------------------------------------------------
+.reservation {
+
+// Section Headline
+// --------------------------------------------------
+    .section-headline {
+        margin-bottom: 20px;
+        text-align: center;
+
+        h4 {
+            display: inline-block;
+            padding-top: 40px;
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background: url(../img/vector3.png) no-repeat center center;
+            background-position-y: 0;
+        }
+
+        & + p {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    .small-headline {
+        margin-bottom: 30px;
+        text-align: center;
+        
+        h4 {
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+   
+
+// Hero Title
+// --------------------------------------------------
+    .hero-title {
+        background-image: url(http://placehold.it/1895x1270);
+    }
+
+
+// Section 1 - Form
+// --------------------------------------------------
+    .form {
+        .form-control,
+        .select-container {
+            background-color: #fff;
+            border: 2px solid #e5e5e5;
+        }
+
+        .form-control {
+            padding-left: 40px;
+            background-position: 15px center;
+
+            &.time {
+                background-image: url(../img/clock.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+        .select-container {
+            padding-left: 40px;
+            background-position: 15px center;
+            background-repeat: no-repeat;
+
+            &.calender {
+                background-image: url(../img/calender.png);
+                background-repeat: no-repeat;
+            }
+
+            &.people {
+                background-image: url(../img/people.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+        .btn[role=button] {
+            font-size: 14px;
+            padding: 13px 25px;
+        }
+    }
+    
+
+// Section 2 - Banner
+// --------------------------------------------------
+    .banner {
+        @include clearfix();
+
+        img {
+            float: left;
+        }
+
+        .align {
+            width: 80%;
+            float: left;
+            margin-left: 30px;
+        }
+
+        h3 {
+            margin: 0 0 30px 0;
+            color: #4b4b4b;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    @media (max-width:992px){
+        .banner {
+            margin-bottom: 30px;
+
+            .align,
+            img {
+                float: none;
+            }
+
+            .align {
+                width: auto;
+                margin: 20px 0 0 0;
+            }
+        }        
+    }
+
+
+// Section 3 - Events
+// --------------------------------------------------
+    .events {
+        .btn + .btn {
+            margin-left: 10px;
+        }
+    }
+}

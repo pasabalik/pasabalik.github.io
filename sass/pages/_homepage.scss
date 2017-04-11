@@ -1,0 +1,370 @@
+/* -----------------------------------------------------------------------------
+// 1. Homepage 
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Section 1 - Hero Slider
+// - Section 2 - Welcome 
+// - Section 3 - Counters
+// - Section 4 - Menu
+// - Section 5 - Testimonials
+// - Section 6 - News
+// - Section 7 - Features
+// - Section 9 - Form
+
+
+//
+// homepage
+// --------------------------------------------------
+.homepage {
+
+// Section Headline
+// --------------------------------------------------
+    .section-headline {
+        margin-bottom: 20px;
+        text-align: center;
+
+        h4 {
+            display: inline-block;
+            padding-top: 40px;
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background: url(../img/vector3.png) no-repeat center center;
+            background-position-y: 0;
+        }
+
+        & + p {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+
+// Section 1 - Hero Splash
+// --------------------------------------------------
+    .hero-splash {
+        position: relative;
+        max-height: 800px;
+        height: 100vh;
+        text-align: center;
+        font-family: $headings-font-family;
+        overflow: hidden;
+        background: url(../img/bg.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+            -ms-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+
+        .splash-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            @media (max-width:1230px) {
+                img {
+                    max-width: initial;
+                }
+            }
+
+            // pagination circles
+            .owl-pagination {
+                position: absolute;
+                bottom: 30px;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                text-align: center;
+
+                .owl-page {
+                    display: inline-block;
+
+                    span {
+                        margin: 5px 4px;
+                        filter: Alpha(Opacity=100);
+                        opacity: 1;
+                        border: 1px solid #fff;
+                        background: transparent;
+                    }
+
+                    &.active span {
+                        border-color: #fff;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+        // positioning it in the center
+        .align {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+
+            -webkit-transform: translateY(-50%);
+               -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                 -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+        }
+    }
+
+
+// Section 2 - Welcome 
+// --------------------------------------------------
+    .welcome {
+        text-align: center;
+
+        .section-headline {
+            margin-top: 70px;
+        }
+
+        p {
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+
+// Section 3 - Counters
+// --------------------------------------------------
+    .counters {
+        padding: 130px 0 100px 0;
+        background: url(http://placehold.it/1895x1100) center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
+// Section 4 - Menu
+// --------------------------------------------------
+    .menu {
+        text-align: center;
+
+        @media (max-width:992px) {
+            img {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+// Section 5 - Testimonials
+// --------------------------------------------------
+    .testimonials {
+        padding: 100px 0;
+        background: url(http://placehold.it/1895x1100) center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
+// Section 6 - News
+// --------------------------------------------------
+    .recent-post {
+        position: relative;
+        background-color: #f9f9f9;
+        margin-bottom: 20px;
+
+        // post info - date and type
+        .info {
+            position: absolute;
+            top: 30px;
+            left: 0;
+
+            .type {
+                padding: 10px;
+                background-color: $brand-color; // fallback
+                background-color: rgba(215, 81, 77, .9);
+                color: #fff;
+            }
+
+            .date {
+                margin-left: -4px;
+                padding: 10px 20px;
+                background-color: #fff; // fallback
+                background-color: rgba(255, 255, 255, .9);
+                color: #181818;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+
+        // for audio/video posts
+        iframe {
+            width: 100%;
+            border: none;
+        }
+
+        // video posts
+        .video {
+            position: relative;
+
+        }
+
+        // play button
+        .play {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+
+            background-color: $brand-color;
+            color: #fff;
+            font-size: 16px;
+            opacity: .9;
+
+            -webkit-transform: translateY(-50%);
+               -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+
+
+        }
+
+        // post title
+        h2 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 28px;
+
+            a {
+                color: #4b4b4b;
+                font-weight: 600;
+            }
+
+            + p {
+                margin-bottom: 20px;
+            }
+        }
+
+        // post text content
+        p {
+            color: #9c9c9c;
+        }
+
+        // aligning the content of the post
+        .align {
+            padding: 20px 40px;
+        }
+
+        // share, like & comment buttons
+        .meta {
+            padding-top: 30px;
+            padding: 20px 40px;
+            border-top: 2px solid #fff;
+            @include transition(all, .5s);
+
+            a {
+                font-family: $links-font-family;
+                text-transform: uppercase;
+                margin-right: 25px;
+                font-size: 12px;
+                color: #c4c4c4;
+
+                &:hover {
+                    color: $heading-text-color;
+                    text-decoration: none;
+
+                    i {
+                        color: $brand-color;
+                    }
+                }
+            }
+
+            i {
+                position: relative;
+                bottom: -2px;
+                margin-right: 4px;
+            }
+        }
+    }
+
+
+// Section 7 - Features
+// --------------------------------------------------
+    .features {
+        .feature {
+            margin-bottom: 50px;
+            text-align: center;
+
+            h3 {
+                font-weight: 600;
+                color: #4b4b4b;
+                font-size: 20px;
+            }
+
+            p {
+                padding: 0 10px;
+            }
+        }
+    }
+
+
+// Section 9 - Form
+// --------------------------------------------------
+    .form {
+        .form-control,
+        .select-container {
+            background-color: #fff;
+            border: 2px solid #e5e5e5;
+        }
+
+        .form-control {
+            padding-left: 40px;
+            background-position: 15px center;
+
+            &.time {
+                background-image: url(../img/clock.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+        .select-container {
+            padding-left: 40px;
+            background-position: 15px center;
+            background-repeat: no-repeat;
+
+            &.calender {
+                background-image: url(../img/calender.png);
+                background-repeat: no-repeat;
+            }
+
+            &.people {
+                background-image: url(../img/people.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+        .btn[role=button] {
+            font-size: 14px;
+            padding: 13px 25px;
+        }
+    }
+}

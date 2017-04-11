@@ -1,0 +1,47 @@
+/* -----------------------------------------------------------------------------
+// 1. Header 
+// ----------------------------------------------------------------------------- */
+
+// Header
+// --------------------------------------------------
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 1;
+
+    &:after {
+    	content: ' ';
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: url(../img/shadow.png) center center;
+	    background-size: contain;
+	    opacity: .7;
+	    z-index: -1;
+    }
+}
+
+@media(max-width:768px){
+	header:after {
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+}
+
+
+// Logo
+// --------------------------------------------------
+
+// Put your logo's custom styles here.
+
+
+// Navbar
+// --------------------------------------------------
+
+// All navbar styles are in "_navbar.scss" file in the "components" folder.
+
