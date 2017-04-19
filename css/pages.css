@@ -10,7 +10,7 @@
 // - 7. Contact Page
 */
 /* -----------------------------------------------------------------------------
-// 1. Homepage 
+// 1. Homepage
 // ----------------------------------------------------------------------------- */
 .homepage .section-headline {
   margin-bottom: 20px;
@@ -89,7 +89,7 @@
     margin-right: 10px; }
 .homepage .counters {
   padding: 130px 0 100px 0;
-  background: url(http://placehold.it/1895x1100) center center;
+  background: url(../img/counter1.jpg) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -102,7 +102,7 @@
       margin-bottom: 30px; } }
 .homepage .testimonials {
   padding: 100px 0;
-  background: url(http://placehold.it/1895x1100) center center;
+  background: url(../img/testimonial.jpg) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -224,7 +224,7 @@
   padding: 13px 25px; }
 
 /* -----------------------------------------------------------------------------
-// 2. About Page 
+// 2. About Page
 // ----------------------------------------------------------------------------- */
 .about .section-headline {
   margin-bottom: 20px;
@@ -310,7 +310,7 @@
   background-size: cover; }
 
 /* -----------------------------------------------------------------------------
-// 3. News Page 
+// 3. News Page
 // ----------------------------------------------------------------------------- */
 .news .section-headline {
   margin-bottom: 20px;
@@ -477,7 +477,7 @@
   margin-top: 50px; }
 
 /* -----------------------------------------------------------------------------
-// 4. News Read Page 
+// 4. News Read Page
 // ----------------------------------------------------------------------------- */
 .news-read .section-headline {
   margin-bottom: 20px;
@@ -591,7 +591,7 @@
     height: 200px; }
 
 /* -----------------------------------------------------------------------------
-// 5. Menu Page 
+// 5. Menu Page
 // ----------------------------------------------------------------------------- */
 .menu .hero-title {
   background-image: url(http://placehold.it/1895x1270); }
@@ -662,7 +662,7 @@
     background-image: url(http://placehold.it/1895x1270); }
 
 /* -----------------------------------------------------------------------------
-// 6. Reservation Read Page 
+// 6. Reservation Read Page
 // ----------------------------------------------------------------------------- */
 .reservation .section-headline {
   margin-bottom: 20px;
@@ -740,7 +740,7 @@
   margin-left: 10px; }
 
 /* -----------------------------------------------------------------------------
-// 7. Contact Page 
+// 7. Contact Page
 // ----------------------------------------------------------------------------- */
 .contact-page .section-headline {
   margin-bottom: 50px;
