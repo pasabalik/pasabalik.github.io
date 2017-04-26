@@ -594,7 +594,7 @@
 // 5. Menu Page
 // ----------------------------------------------------------------------------- */
 .menu .hero-title {
-  background-image: url(http://placehold.it/1895x1270); }
+  background-image: url(../img/0.jpg); }
 .menu .item {
   position: relative;
   padding: 15px 0;
@@ -657,9 +657,9 @@
   .menu .banner.breakfast {
     background-image: url(http://placehold.it/1895x1270); }
   .menu .banner.lunch {
-    background-image: url(http://placehold.it/1895x1270); }
+    background-image: url(../img/counter.jpg); }
   .menu .banner.dinner {
-    background-image: url(http://placehold.it/1895x1270); }
+    background-image: url(../img/testimonial.jpg); }
 
 /* -----------------------------------------------------------------------------
 // 6. Reservation Read Page
