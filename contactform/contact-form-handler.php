@@ -5,7 +5,7 @@ $errors = '';
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 
-$myemail = 'zawiaemail@gmail.com';// <===== Put Your email address here.
+$myemail = 'agolho@gmail.com';// <===== Put Your email address here.
 
 ////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
@@ -31,22 +31,22 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail;
-	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message";
+	$email_subject = "İletişim Formu: $name";
+	$email_body = "Yeni Bir Mesajınız Var. ".
+	" Detaylar:\n İsim: $name \n Email: $email_address \n Mesaj \n $message";
 
-	$headers = "From: $myemail\n";
-	$headers .= "Reply-To: $email_address";
+	$headers = "Kimden: $myemail\n";
+	$headers .= "Cevap: $email_address";
 
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	header('Location: thanks/contact-form-thank-you.html');
+	header('Konum: thanks/contact-form-thank-you.html');
 }
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Contact form handler</title>
+	<title>İletişim Formu</title>
 </head>
 
 <body>

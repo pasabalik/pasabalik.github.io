@@ -660,6 +660,12 @@
     background-image: url(../img/counter.jpg); }
   .menu .banner.dinner {
     background-image: url(../img/testimonial.jpg); }
+  .menu .banner.tavuk {
+    background-image: url(../img/tavuk.jpg); }
+  .menu .banner.dessert {
+    background-image: url(../img/dessert.jpg); }
+  .menu .banner.beverage {
+    background-image: url(../img/beverage.jpg); }
 
 /* -----------------------------------------------------------------------------
 // 6. Reservation Read Page
