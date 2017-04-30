@@ -12,6 +12,12 @@
 /* -----------------------------------------------------------------------------
 // 1. Homepage
 // ----------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+ .adresstyle !important{
+  font-family: "Oswald",sans-serif;
+  font-size: large;
+  color:white !important;
+}
 .homepage .section-headline {
   margin-bottom: 20px;
   text-align: center; }
@@ -597,7 +603,9 @@
   text-align: center;
 }
 .menu .hero-title {
-  background-image: url(../img/0.jpg); }
+  background-image: url(../img/hero_menu.jpg);
+
+}
 .menu .item {
   position: relative;
   padding: 15px 0;
@@ -648,9 +656,10 @@
   background-size: cover; }
   .menu .banner h2 {
     display: inline-block;
+    font-family: "Oswald",sans-serif;
     padding-top: 50px;
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 900;
     color: #fff;
     text-transform: uppercase;
     background: url(../img/vector4.png) no-repeat center center;

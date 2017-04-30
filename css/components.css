@@ -1,4 +1,4 @@
-/* 
+/*
 // Table of content
 // -----------------------------------------------------------------------------
 // - 1. Buttons
@@ -18,7 +18,7 @@
 // - 15. Imageboxes
 */
 /* -----------------------------------------------------------------------------
-// 1. Buttons 
+// 1. Buttons
 // ----------------------------------------------------------------------------- */
 .btn {
   display: inline-block;
@@ -123,7 +123,7 @@
       color: #fff; }
 
 /* -----------------------------------------------------------------------------
-// 2. Forms 
+// 2. Forms
 // ----------------------------------------------------------------------------- */
 .form-control {
   height: 50px;
@@ -235,7 +235,7 @@ input[type="radio"]:checked + label:before {
   transition: background-color 0.5s linear; }
 
 /* -----------------------------------------------------------------------------
-// 3. Navbar 
+// 3. Navbar
 // ----------------------------------------------------------------------------- */
 .navbar-default {
   background-color: transparent;
@@ -362,7 +362,7 @@ input[type="radio"]:checked + label:before {
   .navbar-nav > li.mega > .dropdown-menu {
     width: 750px; } }
 /* -----------------------------------------------------------------------------
-// 4. Messages 
+// 4. Messages
 // ----------------------------------------------------------------------------- */
 .message {
   position: relative;
@@ -415,7 +415,7 @@ input[type="radio"]:checked + label:before {
       color: #c183d6; }
 
 /* -----------------------------------------------------------------------------
-// 5. Alerts 
+// 5. Alerts
 // ----------------------------------------------------------------------------- */
 .alert {
   position: relative;
@@ -476,7 +476,7 @@ input[type="radio"]:checked + label:before {
       color: #c183d6; }
 
 /* -----------------------------------------------------------------------------
-// 6. CTA 
+// 6. CTA
 // ----------------------------------------------------------------------------- */
 .cta {
   padding: 30px 0; }
@@ -532,7 +532,7 @@ input[type="radio"]:checked + label:before {
       width: 100%;
       float: none; } }
 /* -----------------------------------------------------------------------------
-// 7. ACCORDIONS 
+// 7. ACCORDIONS
 // ----------------------------------------------------------------------------- */
 .panel-group .panel {
   border-radius: 0;
@@ -983,8 +983,23 @@ figure.person.style3 {
     overflow: hidden;
     border: 5px solid #fff; }
 
+    .testimonial.style5 {
+      width: 70%;
+      text-align: center; }
+      .testimonial.style5 p {
+        font-family: "Oswald", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        color: #fff; }
+      .testimonial.style5 h4 {
+        font-family: "Montserrat", Helvetica, Arial, sans-serif;
+        margin-top: 50px;
+        color: #fff;
+        text-transform: uppercase; }
 /* -----------------------------------------------------------------------------
-// 10. Tabs 
+// 10. Tabs
 // ----------------------------------------------------------------------------- */
 .nav-tabs {
   border-color: #f1f1f1; }
@@ -1114,7 +1129,7 @@ figure.person.style3 {
   .tab-content.style4 {
     margin-bottom: 20px; } }
 /* -----------------------------------------------------------------------------
-// 11. Pricing 
+// 11. Pricing
 // ----------------------------------------------------------------------------- */
 .price-table {
   padding: 35px 50px 25px 50px;
@@ -1216,7 +1231,7 @@ figure.person.style3 {
     opacity: 1; }
 
 /* -----------------------------------------------------------------------------
-// 12. Iconboxes 
+// 12. Iconboxes
 // ----------------------------------------------------------------------------- */
 .iconbox.style1 {
   text-align: center; }
@@ -1413,7 +1428,7 @@ figure.person.style3 {
       float: none;
       margin: 0 auto 20px auto; } }
 /* -----------------------------------------------------------------------------
-// 13. Progress 
+// 13. Progress
 // ----------------------------------------------------------------------------- */
 .progress-title {
   text-transform: uppercase;
@@ -1617,7 +1632,7 @@ figure.person.style3 {
     color: #fff; }
 
 /* -----------------------------------------------------------------------------
-// 14. Galleries 
+// 14. Galleries
 // ----------------------------------------------------------------------------- */
 .owl-buttons .owl-prev,
 .owl-buttons .owl-next {
@@ -1759,7 +1774,7 @@ figure.person.style3 {
   opacity: 1; }
 
 /* -----------------------------------------------------------------------------
-// 15. Imageboxes 
+// 15. Imageboxes
 // ----------------------------------------------------------------------------- */
 .imgbox.style1 {
   background-color: #f9f9f9;
